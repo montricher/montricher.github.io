@@ -179,8 +179,8 @@ jQuery(document).ready(function(){
 	// Portfolio image animation
 	// $plist.find('img').adipoli({
 	// 	'startEffect' 	: 'transparent',
-	// 	'hoverEffect' 	: 'boxRandom',
-	// 	'imageOpacity' 	: 0.6,
+	// 	'hoverEffect' 	: 'popout',
+	// 	'imageOpacity' 	: 0.8,
 	// 	'animSpeed' 	: 100,
 	// });
 

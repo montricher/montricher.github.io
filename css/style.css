@@ -419,7 +419,7 @@ header {
   width: 820px;
   overflow: hidden; }
   #portfolio-list li {
-    float: left;
+    float: center;
     margin-right: 25px;
     text-align: center;
     background-color: #fbfbfb;
@@ -860,6 +860,12 @@ footer, div.footer {
 /*-------------------------------------------------------*/
 /* Media Queries */
 /*-------------------------------------------------------*/
+
+
+
+
+
+
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   #container {
@@ -936,6 +942,14 @@ footer, div.footer {
 
   .contact-form {
     width: 420px; } }
+
+
+
+
+
+
+
+
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   #container {
@@ -1045,6 +1059,13 @@ footer, div.footer {
   .contact-form {
     margin-top: 20px;
     width: 420px; } }
+
+
+
+
+
+
+
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   #container {
@@ -1203,6 +1224,13 @@ footer, div.footer {
 
   .contact-info, .contact-form {
     padding: 0 10px; } }
+
+
+
+
+
+
+
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max-moz-device-pixel-ratio: 2) {
   .tabs li.active {
     background: url("../images/tab-hover@2x.png") no-repeat;
