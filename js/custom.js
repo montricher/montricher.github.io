@@ -238,7 +238,7 @@ jQuery(document).ready(function(){
 		$map.gmap('addMarker', {'position': $lat +','+ $lon  , 'bounds': true}).click(function() {
 			$map.gmap('openInfoWindow', {'content': 'Hello World!'}, this);
 		});
-		$map.gmap('option', 'zoom', 15);
+		$map.gmap('option', 'zoom', 12);
 	});
 
 	// Refresh Map
