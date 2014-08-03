@@ -733,6 +733,12 @@ header {
     color: #666;
     overflow: hidden; }
 
+/* Contact social */
+.contact-social {
+  float: left;
+  padding: 400px;
+  width: 250px; }
+
 /* Google map */
 #map {
   height: 300px;
