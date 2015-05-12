@@ -199,7 +199,7 @@ header {
   .about .photo-inner {
     float: left;
     background: url(../images/photo-inner.png) no-repeat;
-    width: 162px;
+    width: 192px;
     height: 212px;
     padding: 12px 0 0 20px; }
     .about .photo-inner img {
