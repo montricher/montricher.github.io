@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<head>
+  <title>David Montricher | Web Developer + Product Manager</title>
+</head>
+
 <body>
 <link rel="stylesheet" type="text/css" href="styles.css"/>
 
 <div>
   <h3>
-    Hi friendly visitor, I'm David Montricher, an independent web developer and product manager based in New York. I enjoy writing code to craft beautiful user experiences and web appplications for people at <a href="http://www.intuitive.nyc">Intuitive.</a> I want to keep the web open and accessible to all, so I contribute to open source and teach kids how to code. See my code on <a href="http://www.github.com/montricher">Github</a>, <a href="http://www.twitter.com/deinonino">tweet me here</a> and let's connect on <a href="http://www.twitter.com/deinonino">Linkedin</a>.
+    Hey there, I'm David Montricher, an independent web developer and product manager <a target="_blank" href="https://instagram.com/humansofny/">based in New York</a>. I enjoy writing code to craft beautiful user experiences and web appplications for people at <a target="_blank" id="intuitive" href="http://www.intuitive.nyc">Intuitive</a>. I care about keeping the web open and accessible to all, so I contribute to open source and teach how to code at <a target="_blank" href="http://www.c4q.nyc">C4Q</a>. See my code on <a target="_blank" href="http://www.github.com/montricher">Github</a>, tweet me <a target="_blank" href="http://www.twitter.com/deinonino">here</a> and let's connect on <a target="_blank" href="http://www.linkedin.com/in/montricher">Linkedin</a>. And even if it's just to say hi, please <a href="mailto:david@montricher.com">get in touch</a> with me.
   </h3>
 </div>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
-var width = 1420,
-    height = 699;
+var width = 920,
+    height = 400;
 
-var nodes = d3.range(200).map(function() { return {radius: Math.random() * 12 + 4}; }),
+var nodes = d3.range(199).map(function() { return {radius: Math.random() * 12 + 4}; }),
     root = nodes[0],
     color = d3.scale.category10();
 
@@ -23,7 +27,7 @@ root.radius = 0;
 root.fixed = true;
 
 var force = d3.layout.force()
-    .gravity(0.05)
+    .gravity(0.04)
     .charge(function(d, i) { return i ? 0 : -2000; })
     .nodes(nodes)
     .size([width, height]);

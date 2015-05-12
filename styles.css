@@ -2,15 +2,30 @@ html {
   overflow-y: scroll; }
 
 body {
-  background-color: #ffca94;
+  background-color: #FFBC9C;
   margin: 0px;
   padding: 0px;
-  font-family: 'open Sans', Helvetica;
+  font-family: 'open Sans', Monaco;
+  color: #8F0000;
   font-weight: bold;
-  line-height: 75px;
+  line-height: 40px;
   margin: 50px auto;
-  width: 90%;}
+  width: 75%; }
 
-h3 {
-  font-size: 36px;
-  font-color: #ffcce0; }
+div {
+  display:all;
+  font-size: 22px;
+  text-align: left; }
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: auto; }
+
+a:hover {
+  text-decoration: underline;
+}
+
+#intuitive {
+  color:#0033CC;
+}
