@@ -1,0 +1,14 @@
+html {
+  overflow-y: scroll; }
+
+body {
+  background-color: #E8E8E8;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'open Sans', Arial;
+  font-size: 12px; }
+
+h3 {
+  font-size: 20px;
+  font-color: black;
+  font-family: helvetica; }
