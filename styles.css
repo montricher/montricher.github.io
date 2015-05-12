@@ -2,7 +2,7 @@ html {
   overflow-y: scroll; }
 
 body {
-  background-color: #E8E8E8;
+  background-color: #ffca94;
   margin: 0px;
   padding: 0px;
   font-family: 'open Sans', Helvetica;
@@ -12,5 +12,5 @@ body {
   width: 90%;}
 
 h3 {
-  font-size: 60px;
+  font-size: 36px;
   font-color: #ffcce0; }
