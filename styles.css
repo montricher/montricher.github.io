@@ -5,10 +5,12 @@ body {
   background-color: #E8E8E8;
   margin: 0px;
   padding: 0px;
-  font-family: 'open Sans', Arial;
-  font-size: 12px; }
+  font-family: 'open Sans', Helvetica;
+  font-weight: bold;
+  line-height: 75px;
+  margin: 50px auto;
+  width: 90%;}
 
 h3 {
-  font-size: 20px;
-  font-color: black;
-  font-family: helvetica; }
+  font-size: 60px;
+  font-color: #ffcce0; }
