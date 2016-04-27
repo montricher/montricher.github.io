@@ -1,92 +1,18 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<head>
-  <title>David Montricher | Web Developer + Product Manager based in New York</title>
-</head>
+<html>
+  <meta charset="utf-8">
+  <head>
+    <title>David Montricher Web Developer in New York</title>
+  </head>
 
-<body>
-<link rel="stylesheet" type="text/css" href="styles.css"/>
+  <body>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <div class="wrapper">
+    <p id="name">David Montricher<p>
+    <p id="title">Web Strategy, Design and Development</p>
+    <p id="address">915 Broadway, New York City<p>
+    <a href="mailto:david@montricher.com?Subject=Hello%20David!">david@montricher.com</a>
+  </div>
+  </body>
 
-<div>
-  <h3>
-    Hey there, I'm David Montricher, an independent web developer and product manager <a target="_blank" href="http://wearemadeinny.com/">based in New York</a>. I enjoy writing code to craft beautiful user experiences and web applications for people at <a target="_blank" id="intuitive" href="http://www.hellointuitive.com">Intuitive</a>. I care about keeping the web open and accessible to all, so I contribute to open source projects and teach how to code at <a target="_blank" href="http://www.c4q.nyc">C4Q</a> and <a target="_blank" href="http://www.scripted.org">ScriptEd</a>. Read some code on <a target="_blank" href="http://www.github.com/montricher">Github</a>, tweet me <a target="_blank" href="http://www.twitter.com/deinonino">here</a> and let's connect on <a target="_blank" href="http://www.linkedin.com/in/montricher">LinkedIn</a>. Even if it's just to say hi, please <a href="mailto:david@montricher.com">get in touch</a>. Now catch one of these tiny balls with your cursor.
-  </h3>
-</div>
-
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script>
-
-var width = 900,
-    height = 400;
-
-var nodes = d3.range(199).map(function() { return {radius: Math.random() * 12 + 4}; }),
-    root = nodes[0],
-    color = d3.scale.category10();
-
-root.radius = 0;
-root.fixed = true;
-
-var force = d3.layout.force()
-    .gravity(0.04)
-    .charge(function(d, i) { return i ? 0 : -2000; })
-    .nodes(nodes)
-    .size([width, height]);
-
-force.start();
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
-svg.selectAll("circle")
-    .data(nodes.slice(1))
-  .enter().append("circle")
-    .attr("r", function(d) { return d.radius; })
-    .style("fill", function(d, i) { return color(i % 3); });
-
-force.on("tick", function(e) {
-  var q = d3.geom.quadtree(nodes),
-      i = 0,
-      n = nodes.length;
-
-  while (++i < n) q.visit(collide(nodes[i]));
-
-  svg.selectAll("circle")
-      .attr("cx", function(d) { return d.x; })
-      .attr("cy", function(d) { return d.y; });
-});
-
-svg.on("mousemove", function() {
-  var p1 = d3.mouse(this);
-  root.px = p1[0];
-  root.py = p1[1];
-  force.resume();
-});
-
-function collide(node) {
-  var r = node.radius + 16,
-      nx1 = node.x - r,
-      nx2 = node.x + r,
-      ny1 = node.y - r,
-      ny2 = node.y + r;
-  return function(quad, x1, y1, x2, y2) {
-    if (quad.point && (quad.point !== node)) {
-      var x = node.x - quad.point.x,
-          y = node.y - quad.point.y,
-          l = Math.sqrt(x * x + y * y),
-          r = node.radius + quad.point.radius;
-      if (l < r) {
-        l = (l - r) / l * .5;
-        node.x -= x *= l;
-        node.y -= y *= l;
-        quad.point.x += x;
-        quad.point.y += y;
-      }
-    }
-    return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
-  };
-}
-
-</script>
-
-</body>
+</html>
