@@ -1,31 +1,43 @@
-html {
-  overflow-y: scroll; }
-
 body {
-  background-color: #FFC9A6;
-  margin: 0px;
-  padding: 0px;
-  font-family: 'open Sans', Monaco;
-  color: #8F0000;
-  font-weight: bold;
-  line-height: 50px;
-  margin: 60px auto;
-  width: 80%; }
+  background-color: #000;
+  background-image: url('http://i.imgur.com/EuonNBO.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-div {
-  display:all;
-  font-size: 28px;
-  text-align: left; }
+p {
+  font-family: Optima, Avant Garde, Calibri, Arial;
+  color: #fff;
+  text-align: center;
+}
 
-a {
+.wrapper {
+  position: center;
+  max-width: 90%;
+  max-height: 90%;
+  margin: 10% auto;
+}
+
+.wrapper a {
   text-decoration: none;
-  color: black;
-  cursor: auto; }
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+/*  border: 1px solid yellow; */
+  font-size: 1.5em;
+}
 
-a:hover {
+.wrapper a:hover {
   text-decoration: underline;
 }
 
-#intuitive {
-  color:#3399FF;
+#name {
+  font-size: 4em;
+}
+#title {
+  font-size: 2em;
+}
+#address {
+  font-size: 1.5em;
 }
